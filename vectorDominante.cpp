@@ -33,14 +33,15 @@ int main(){
 }
 
 bool compararSecuencias(vector<int> primeraSecuencia, vector<int> segundaSecuencia){
-    int bandera;
+    int bandera = 1;
     for(int i = 0; i < primeraSecuencia.size(); i++){
-        if(primeraSecuencia[i] > segundaSecuencia[i]){
-            bandera = 1;
-        }else{
+        if(primeraSecuencia[i] <= segundaSecuencia[i]){
             bandera = 0;
+            return bandera;
+            //return 0;
         }
+       
     }
     return bandera;
 }
-   
+ 
